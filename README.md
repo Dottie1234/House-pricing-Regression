@@ -9,7 +9,6 @@ Feature Selection
 Modeling
 Hyperparameter Tuning
 Results and Evaluation
-Usage
 Acknowledgments
 Contributors
 
@@ -37,3 +36,30 @@ Feature engineering process:
 ## Feature Selection
 `sklearn.feature_selection.SelectPercentile()` is used with score_function of f_regression and percentile of 20.
 
+## Modeling
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- XGBRegressor
+- Stacking( linear regression, Xgboost, Random_forest)
+- Ensembling VotingRegressor (linear regression, Support Vector Regressor)
+
+## Result and Evaluation
+The Root Means Square Error (RMSE) evaluation metrics is used to evaluate the models.
+- Linear Regression
+    * with feature selection: 0.2771
+    * without feature selection: 0.4778
+- Decision Tree Regression
+    * with feature selection: 0.5351
+    * without feature selection: 0.5275
+- Random Forest
+   * with grid search: 0.4133
+   * without grid search: 0.4649
+- XGBRegressor
+    * with grid search: 0.3802
+    * without grid search: 0.5312
+- Stacking: 0.2937
+- Voting Regressor: 0.2662
+
+## Contact
+adelodungbanjubola@gmail.com
